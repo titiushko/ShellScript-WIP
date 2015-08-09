@@ -1,0 +1,102 @@
+:: 
+Change Log: 
+------------------------------------------ 
+V 2.5:  
+------------------------------------------ 
+    Added game "Slot Machine" 
+    Edited the "8ball" code, made it so you can have spaces in your questions 
+    Added "NOTIFications" to the menu (it states some changes) 
+    Added encryption function, it basically just converts phrases into "code" and back 
+    Added "Simon Says" and "Race Cars" to game section, also changed some code for the guess-the-number game. 
+    Added some constraints to the password 
+    Changed the login section so that the user input shows up as asterisks (no easy task) 
+    Fixed some bugs in the address book, still NOT sure IF it records your birthday correctly 
+    REMoved the alarm.bat file, the beep is now produced internally 
+    Fixed beep NOT working on timer 
+    Updated and added to the README.txt, making it more accurate 
+    Made the README and Change_Log files to be displayed on-screen in the info section 
+    Capitalised most commands 
+    REMoved most SET commands in favour of CHOICE commands 
+    Attempted to make code shorter and more compact 
+    Hopefully fixed info folder NOT auto-deleting when you update the programme 
+    Fixed website STARTer 
+    Made "pass.bat" hidden 
+    Fixed a lot of glitches and loop holes 
+    Edited the code thuroughly FOR any mistakes 
+    REMoved out-dated code 
+    Made code less cluttered 
+    REMoved colour tester option 
+    New layout of the code 
+    Placed contact's files into contact folder 
+    Fixed some errors IN the code 
+    Added a stop watch function 
+    Added "NOTe from the Author" at the START of the code 
+    REMoved Preposed Ideas file 
+------------------------------------------ 
+V 2.4:  
+------------------------------------------ 
+    Allowed g3lrod to edit the code and fix up some mistakes. 
+    Added Monopoly (NOT mine) 
+    Made everything run smoother 
+    Added "Preposed Ideas.txt" to the info folder 
+------------------------------------------ 
+V 2.3: 
+------------------------------------------ 
+    Changed the README.txt document to give credit to both Mac and Chad Baxter 
+    Fixed the try changer saying that you have 3 tries when you don't 
+    Added an "8-ball" feature 
+    Added ability to test internet connection from within website STARTer 
+    Changed the name of the program STARTer (Website STARTer) 
+    Made some passwords unusable 
+    Added password reset option 
+    Added password hint 
+    Added Tic-Tac-Toe (1 player only) 
+    Made the code easier to read 
+    Took out the TIME and DATE viewers 
+    Added the DATE to the main page 
+    Added more information to the guessing game 
+    Decreased the PAUSE TIME IN the greetings.vbs files 
+    Fixed the change log of previous versions 
+------------------------------------------ 
+V 2.2~Fixed: 
+    Fixed password, name and amount of tries NOT changing 
+    Fixed some cases of outdated files NOT deleting (bugs still EXIST) 
+    Improved speling 
+------------------------------------------ 
+V 2.2: 
+------------------------------------------ 
+    Made Minor bug fixes 
+    Auto deletes outdated files (related to the menu only) 
+    Added ability to open folders 
+    Added a file (filep.bat) to the info folder 
+    Deleted unwanted options from the menu 
+    Added text to voice tool 
+    Added rest option IN the SHUTDOWN menu 
+------------------------------------------ 
+V 2.1: 
+------------------------------------------ 
+    Made minor bug fixes 
+    Made you START at the Welcome screen instead of the Menu screen on your first login 
+    Fixed the task schedual option (I used the wrong extension) 
+    Put the task schedual and the task manager IN a new section (tasks) 
+    Fixed the timer creating a new window (it opens then closes) 
+    Added timer warning 
+    Added ability to change your TIME and DATE 
+    Made all files within the info folder read only 
+------------------------------------------ 
+V 2.0: 
+------------------------------------------ 
+    Added games option (only 1 so far) 
+    Fixed password NOT setting 
+    Fixed some minor bugs 
+    Fixed the TIME option (it no longer loops forever) 
+    Added change log 
+    Added README text 
+    Improved the timer 
+    Added Tracer option (this also can find your Ip address FOR you) 
+    Includes the rare alarm symbol 
+    Added ability to START Task Manager 
+    Added ability to schedual a task 
+    Made self-creating: "pass.bat", "alarm.bat", "Change_Log.txt" and "README.txt" files 
+    Added messenging capability 
+    Added ability to START the Change_Log.txt or README.txt documents from within the file 
