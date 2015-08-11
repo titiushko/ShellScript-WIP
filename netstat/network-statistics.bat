@@ -37,23 +37,28 @@ if /i %opcion%==-l goto inicio
 echo.
 goto comando
 :opcion_1
+echo tasklist /v /fi "PID eq %proceso%"
 tasklist /v /fi "PID eq %proceso%"
 goto menu
 :opcion_2
+echo tasklist /v /fi "IMAGENAME eq %proceso%.exe"
 tasklist /v /fi "IMAGENAME eq %proceso%.exe"
 goto menu
 :opcion_3
+echo tasklist /v /fi "USERNAME ne CREATIVA\tito.miguel"
 tasklist /v /fi "USERNAME ne CREATIVA\tito.miguel"
 :: tasklist /v /fi "USERNAME eq NT AUTHORITY\SYSTEM"
 :: tasklist /v /fi "USERNAME eq NT AUTHORITY\SERVICIO LOCAL"
 :: tasklist /v /fi "USERNAME eq NT AUTHORITY\Servicio de red"
 goto menu
 :opcion_4
+echo tasklist /v /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "USERNAME ne NT AUTHORITY\SERVICIO LOCAL" /fi "USERNAME ne NT AUTHORITY\Servicio de red"
 tasklist /v /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "USERNAME ne NT AUTHORITY\SERVICIO LOCAL" /fi "USERNAME ne NT AUTHORITY\Servicio de red"
 goto menu
 :opcion_5
+echo taskkill /f /pid %proceso%
 taskkill /f /pid %proceso%
 goto menu
 :opcion_6
-taskkill /f /im %proceso%.exe
+echo taskkill /f /im %proceso%.exe
 goto menu
