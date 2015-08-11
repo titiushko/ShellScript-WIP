@@ -1,0 +1,35 @@
+cmd /k <comando>
+permite abrir la consola, ejecutar el comando y mantener abierta la ventana con la información
+
+netstat -tona
+(t) muestra el estado de la carga de la conexión actual
+(o) permite ver la identidad de cada proceso (PID) involucrado
+(n) muestra los puertos y las direcciones en formato numérico
+(a) muestra todas las conexiones y puertos a la escucha
+
+netstat -tona > <nombre.txt>
+guarda el resultado del comando en el archivo <nombre.txt>
+
+netstat -tona|FINDSTR /C:LISTENING
+mostrar el resultado filtrado por el estado listening
+
+tasklist /svc /fi "pid eq <id>"
+para saber el nombre de la aplicación, inclusive otros procesos anidados
+<id> es el resultado del comando netstat -o que permite ver el pid
+
+taskkill /f /im <proceso.exe>
+detener de manera forzada cualquier proceso
+
+ipconfig /flushdns
+vaciar la cache de resolución dns almacenada
+
+ipconfig /displaydns
+ver la cache almacenada actualmente
+
+estados
+LISTENING:	 el puerto está abierto escuchando en espera de una conexión
+ESTABLISHED: la conexión ha sido establecida
+CLOSE_WAIT:	 la conexión sigue abierta, pero el otro extremo nos comunica que no se continuará enviando información
+TIME_WAIT:	 la conexión ha sido cerrada, pero no se elimina de la tabla de conexión por si hay algo pendiente de recibir
+LAST_ACK:	 la conexión se está cerrando
+CLOSED:		 la conexión ha sido cerrada completamente
