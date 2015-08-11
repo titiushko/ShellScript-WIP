@@ -8,12 +8,12 @@ cmd /c %*"netstat -tona|FINDSTR /C:LISTENING"
 :menu
 echo.
 echo Opciones...
-echo  -bc PID buscar un proceso por codigo, ejemplo -bc 2660.
-echo  -bn IMAGENAME buscar un proceso por nombre, ejemplo -bn chrome.
+echo  -bc [PID] Buscar un proceso por codigo. Ejemplo: -bc 2660.
+echo  -bn [IMAGENAME] Buscar un proceso por nombre. Ejemplo: -bn chrome.
 echo  -vs Ver todos los procesos del sistema.
 echo  -vu Ver todos los procesos de los usuarios locales.
-echo  -ec PID eliminar un proceso por codigo, ejemplo -ec 2660.
-echo  -en IMAGENAME eliminar un proceso por nombre, ejemplo -en chrome.
+echo  -ec [PID] Eliminar un proceso por codigo. Ejemplo: -ec 2660.
+echo  -en [IMAGENAME] Eliminar un proceso por nombre. Ejemplo: -en chrome.
 echo  -l Limpiar pantalla.
 echo  -q Salir.
 echo ------------------------------------------------------------------
@@ -43,9 +43,10 @@ goto menu
 tasklist /v /fi "IMAGENAME eq %proceso%.exe"
 goto menu
 :opcion_3
-tasklist /v /fi "USERNAME eq NT AUTHORITY\SYSTEM"
-tasklist /v /fi "USERNAME eq NT AUTHORITY\SERVICIO LOCAL"
-tasklist /v /fi "USERNAME eq NT AUTHORITY\Servicio de red"
+tasklist /v /fi "USERNAME ne CREATIVA\tito.miguel"
+:: tasklist /v /fi "USERNAME eq NT AUTHORITY\SYSTEM"
+:: tasklist /v /fi "USERNAME eq NT AUTHORITY\SERVICIO LOCAL"
+:: tasklist /v /fi "USERNAME eq NT AUTHORITY\Servicio de red"
 goto menu
 :opcion_4
 tasklist /v /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "USERNAME ne NT AUTHORITY\SERVICIO LOCAL" /fi "USERNAME ne NT AUTHORITY\Servicio de red"
