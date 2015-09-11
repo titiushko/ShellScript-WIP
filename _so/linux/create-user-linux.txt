@@ -1,0 +1,43 @@
+- crear usuario:
+useradd tito
+
+- asignarle contraseña al usuario creado:
+passwd tito
+
+- crear el directorio del usuario:
+mkdir /home/tito
+
+- asignar dueño y grupo al directorio:
+chown tito:tito -R /home/tito
+
+- asignar los permisos al directorio:
+chmod 755 -R /home/tito
+
+- asignarle el directorio de usuario al nuevo usuario:
+usermod -d /home/tito tito
+
+- asegurarse de tener bash como predeterminado para el nuevo usuario, la linea del usuario nuevo debe tener al final /bin/bash y no /bin/sh, sinó cambiarla por /bin/bash:
+nano /etc/passwd
+
+- agregar el usurario a los grupos:
+nano /etc/group
+
+- agregar el usuario a todos los grupos en donde esté el otro usuario (separado por una coma y sin espacio):
+shu***:x:407:usuario,otro_usuario,otro_usuario_mas
+
+- copiar archivos de configuración:
+cp -R /home/root/.config /home/tito/
+cp -R /home/root/.conkyrc /home/tito/
+
+- asignarle propietario a estos archivos y directorios que se copiaron:
+chown tito:tito -R /home/tito
+
+- si se tiene slim como gestor de arranque, modificar /etc/slim.conf y asegurase de que el autologin esté deshabilitado:
+auto_login no
+
+- y en "default_user" poner lo que quiera o no poner ninguno y tener que escribirlo al iniciar, si no funciona, probar modificar-lo para dejarlos algo así:
+i.e. for freebsd use:
+login_cmd exec /bin/sh - ~/.xinitrc %session
+login_cmd exec /bin/bash -login /etc/X11/Xsession %session
+
+- que esté descomentado el archivo .xinitrc del directorio de usuario, así lee un archivo .xinit diferente según el usuario que loguea, si se tiene otro gestor de usuarios como gdm o kdm, configuralo gráficamente según lo que se quiera

@@ -1,0 +1,103 @@
+ipconfig /release
+ipconfig /renew
+
+Más Útiles de los Programas
+
+- abrir paint
+MSPAINT
+
+- abrir bloc de notas
+NOTEPAD
+
+- abrir la calculadora
+CALC
+
+- ejecutar la unidad de DVD
+DVDPLAY
+
+- mostrar un teclado en pantalla
+OSK
+
+- abrir la lupa
+MAGNIFY
+
+- ajustar las propiedades del volumen
+SNDVOL
+
+- abrir la informacion del sistema
+MSINFO32
+
+- abrir el administrador de tareas de windows
+TASKMGR
+
+- abrir word (si está instalado)
+WINWORD
+
+- abrir mozilla firefox (si está instalado)
+FIREFOX
+
+- cerrar la sesión activa
+LOGOFF
+
+- abrir la carpeta de instalación de otros programas (program files)
+%PROGRAMFILES%
+
+- abrir la carpeta del perfil del usuario conectado actualmente
+%USERPROFILE%
+
+Más Útiles de Limpieza y Control
+
+- escanear todos los archivos del sistema y repara los archivos dañados
+SFC /SCANNOW
+
+- escanear únicamente de los archivos del sistema
+SFC /VERIFYONLY
+
+- escanear el archivo indicado, y lo repara si está dañado
+SFC /SCANFILE="nombre y ruta del archivo"
+
+- escanear únicamente el archivo indicado
+SFC /VERIFYFILE="nombre y ruta del archivo"
+
+- escanear los archivos del sistema la próxima vez que se inicie el ordenador
+SFC /SCANONCE
+
+- restablece la configuración inicial (para mayor información, escribir SFC /? en la consola CMD)
+SFC /REVERT
+
+- mostrar las conexiones de red
+CONTROL NETCONNECTIONS
+- o
+NCPA.CPL
+
+- abrir las propiedades de internet
+INETCPL.CPL
+
+- abrir firewall de windows
+FIREWALL.CPL
+
+- desfragmentar el disco duro
+DEFRAG
+
+- realizar un análisis de la partición precisados en los parámetros del comando (para mayor información, escribir CHKDSK /? en la consola CMD)
+CHKDSK
+
+Mas Útiles de Panel de Control
+
+- abrir el panel de control
+CONTROL
+
+- abrir las opciones de carpeta
+CONTROL FOLDERS
+
+- abrir las fuentes
+CONTROL FONTS
+
+- abrir agregar o quitar programas
+APPWIZ.CPL
+
+- abrir la herramienta de diagnostico de DirectX
+DXDIAG
+
+- abrir la utilidad de configuración del sistema
+MSCONFIG

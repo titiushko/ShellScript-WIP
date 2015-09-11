@@ -1,0 +1,56 @@
+- crear directorio:
+mkdir /home/tito
+
+- cambiar permisos:
+chmod 7777 -R /home/tito/
+
+- cambiar propietario y grupo:
+chown tito.tito -R /home/tito/
+
+- otra forma de cambiar propietario y grupo:
+chown tito:tito -R /home/tito/
+
+- cambiar permisos, propietario y grupo:
+chmod 7777 -R /home/tito/ && chown -R tito.tito /home/tito/
+
+- cambiar contraseña de usuario :
+sudo passwd nombre_usuario
+
+- ver el tamaño de unidad de disco:
+df -h
+
+- eliminar un archivo o un directorio:
+rm -rf <archivo | directorio>
+
+- comprimir un archivo o un directorio:
+tar -cvf <directorio + nombre_archivo_comprimido | nombre_archivo_comprimido>.tar <archivo | directorio>
+
+- descomprimir un archivo o un directorio:
+tar -xvf <directorio + nombre_archivo_comprimido | nombre_archivo_comprimido>.tar <archivo | directorio>
+
+- configurar los programas predeterminados:
+hacer la combinación de teclas alt + f2 y buscar exo-preferred-applications
+
+- abrir el explorador de archivos como root (posiblemente requiera instalar apt-get install gksu y apt-get install exo-utils):
+gksu nautilus
+
+- mostrar en un listado todos los directorios y archivos (incluyendo los ocultos) de un directorio:
+ls -lsa
+
+- mostrar la ruta completa del directorio actual:
+pwd
+
+- crear variable de entonor:
+export SYSCAP=/home/tito/www/syscap
+
+- ver variable de entonor:
+echo $SYSCAP
+
+- crear directorio:
+mkdir /home/tito/download
+
+- descargar archivos:
+wget <url>
+
+- mover directorio:
+mv moodle /home/tito/www
