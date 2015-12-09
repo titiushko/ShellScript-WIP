@@ -1,0 +1,14 @@
+.git\
+.settings\
+application\
+database\
+librerias\
+system\
+user_guide\
+.buildpath
+.project
+.gitignore
+copy-syscap.bat
+license.txt
+no-copiar
+README.md
