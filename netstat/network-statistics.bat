@@ -14,6 +14,8 @@ echo  -vs Ver todos los procesos del sistema.
 echo  -vu Ver todos los procesos de los usuarios locales.
 echo  -ec [PID] Eliminar un proceso por codigo. Ejemplo: -ec 2660.
 echo  -en [IMAGENAME] Eliminar un proceso por nombre. Ejemplo: -en chrome.
+echo  -s Ver todos los servicios.
+echo  -sn [NOMBRE] Eliminar un servicio por nombre. Ejemplo: -es fcs.
 echo  -l Limpiar pantalla.
 echo  -q Salir.
 echo ------------------------------------------------------------------
@@ -32,6 +34,8 @@ if /i %opcion%==-vs goto opcion_3
 if /i %opcion%==-vu goto opcion_4
 if /i %opcion%==-ec goto opcion_5
 if /i %opcion%==-en goto opcion_6
+if /i %opcion%==-s goto opcion_7
+if /i %opcion%==-sn goto opcion_8
 if /i %opcion%==-l goto inicio
 :no_es_comando
 echo.
@@ -61,4 +65,13 @@ taskkill /f /pid %proceso%
 goto menu
 :opcion_6
 echo taskkill /f /im %proceso%.exe
+taskkill /f /im %proceso%.exe
+goto menu
+:opcion_7
+echo sc query type= service | more
+sc query type= service | more
+goto menu
+:opcion_8
+echo sc delete %proceso%
+sc delete %proceso%
 goto menu
