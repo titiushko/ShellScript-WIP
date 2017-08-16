@@ -2,6 +2,10 @@
 @setlocal
 :inicio
 cls
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+echo.
 echo   PROTO  DIRECCION LOCAL        DIRECCION REMOTA       ESTADO          PID      ESTADO DE DESCARGA
 ::     TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       1640     EnHost
 cmd /c %*"netstat -tona|FINDSTR /C:LISTENING"
